@@ -21,13 +21,13 @@
 
     <body>
         <header>
-            <!-- place navbar here -->
+            {{View::make('components.header')}}
         </header>
-        <main class="main">
+        <main style="height: 85vh;">
             @yield('content')
         </main>
         <footer>
-            <!-- place footer here -->
+            {{View::make('components.footer')}}
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script

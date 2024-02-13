@@ -21,7 +21,13 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+        //starting session || start session middleware
+        \Illuminate\Session\Middleware\StartSession::class,
+
+        //User Auth middleware
+        \App\Http\Middleware\userAuth::class,
     ];
+
 
     /**
      * The application's route middleware groups.

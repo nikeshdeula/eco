@@ -7,13 +7,12 @@
 /* -----root----- */
 
 /* -----login page---- */
-.container {
+.login {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    height: 95vh;
+    height: 85vh;
 }
 
 

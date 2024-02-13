@@ -1,7 +1,8 @@
-@extends('layout')
+@extends('components.layout')
 @section('content')
 
 <form action="" method="post" class="container login">
+    @csrf
     <h3 class="mb-4">WELCOME TO LOGIN</h3>
     <div class="mb-3 w-25 ">
         <label for="" class="form-label">Email</label>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BannerController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -25,3 +26,6 @@ Route::get('/login', function () {
 
 Route::post('/login', [UserController::class,'login']);
 Route::get('/product', [ProductController::class,'product']);
+Route::get('detail/{id}', [ProductController::class,'detail']);
+Route::get('/banner', [BannerController::class, 'banner']);
+

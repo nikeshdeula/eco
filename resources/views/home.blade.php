@@ -1,4 +1,8 @@
 @extends('components.layout')
 @section('content')
-    <h1>Welcome to Home page</h1>
+<div class="home">
+<h1>Homepage</h1>
+</div>
 @endsection
+
+ 

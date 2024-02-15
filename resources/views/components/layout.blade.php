@@ -23,10 +23,10 @@
         <header>
             {{View::make('components.header')}}
         </header>
-        <main style="height: 85vh;">
+        <main style="">
             @yield('content')
         </main>
-        <footer>
+        <footer class="sticky">
             {{View::make('components.footer')}}
         </footer>
         <!-- Bootstrap JavaScript Libraries -->

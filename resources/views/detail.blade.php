@@ -13,7 +13,11 @@
                 <p>{{$product['description']}}</p>
                 <hr> 
                 <div class="d-flex gap-2">   
-                <a href="" class="btn bg-dark text-white">Add To Cart</a>
+                <form action="/add_to_cart" method="post">
+                    @csrf
+                    <input type="hidden"  name="product_id" value="{{$product['id']}}">
+                    <button class="btn bg-dark text-white">Add To Cart</button>
+                </form>
                 <a href="" class="btn bg-dark text-white">Buy Now</a>
             </div>
             </div>
